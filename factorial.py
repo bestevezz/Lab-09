@@ -5,12 +5,13 @@ def factorial(n):
         # i < n ensures that i will never reach n
         total = total * (n - i)
         # and therefore we never multiply by 0
-        print("Current value of i is : " + str(i))
-        print("Current value of total is : " + str(total))
+        print("Current value of i is : ", i)
+        print("Current value of total is : ", total)
     return total
 
 
 userString = input("number please! ")
 usernum = int(userString, 10)
 
-print(str(usernum) + ("! is ") + str(factorial(usernum)))
+print((usernum), ("! is "), factorial(usernum))
+# if you use commas, you dont need to convert to a str
